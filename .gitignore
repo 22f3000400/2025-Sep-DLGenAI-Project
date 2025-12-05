@@ -1,1 +1,2 @@
 artifacts/model4_distilbert_finetune.pt
+artifacts/model5_bert_checkpoint.pt

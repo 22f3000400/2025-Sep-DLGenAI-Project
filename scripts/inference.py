@@ -6,6 +6,12 @@ import torch
 from transformers import BertTokenizer
 
 from .models import TextCNN, EmotionBERT
+import os
+import streamlit as st
+
+if "KAGGLE_USERNAME" in st.secrets:
+    os.environ["KAGGLE_USERNAME"] = st.secrets["KAGGLE_USERNAME"]
+    os.environ["KAGGLE_KEY"] = st.secrets["KAGGLE_KEY"]
 
 try:
     import kagglehub
